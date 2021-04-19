@@ -53,7 +53,7 @@ TRACKS['bio'] = [Req(['BIO60', 'BIO61', 'BIO62'], (1, False)),
        Req([Req(['CHEM31A', 'CHEM31B'], (2, False)), 'CHEM31M'], (1, False)),
        'CHEM33', 'CHEM121', 'MATH19', 'MATH20', 'MATH21', 'MATH51',
        'CME100',
-       Req([Req(['PHYSICS21', 'PHYSICS22', 'PHYSICS23', 'PHYSICS24'], (4, False)), Req(['PHYSICS41', 'PHYSICS42', 'PHYSICS43'], (4, False))], (1, False)),
+       Req([Req(['PHYSICS21', 'PHYSICS22', 'PHYSICS23', 'PHYSICS24'], (4, False)), Req(['PHYSICS41', 'PHYSICS42', 'PHYSICS43'], (3, False))], (1, False)),
        Req(['BIO141', 'STATS141', 'BIOHOPK174H', 'STATS60'], (1, False)),
        Req(['BIO46', 'BIO47', 'BIO168', 'BIO196A', 'BIO199W', 'BIOHOPK47', 'BIOHOPK175H'], (1, False))]
 
