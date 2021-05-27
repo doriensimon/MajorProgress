@@ -10,6 +10,7 @@ TRACKNAMES = [
     'math',
     'ms&e',
     'ee',
+    'cs',
 ]
 TRACK_PRIORITIES = {
     'biochem': 2,
@@ -20,6 +21,7 @@ TRACK_PRIORITIES = {
     'math': 6,
     'ms&e': 7,
     'ee': 8,
+    'cs': 9,
 }
 
 
@@ -86,16 +88,7 @@ Computer Science
 
 not done
 '''
-#     ai = ['CS221', Req(['CS228', 'CS229', 'CS234', 'CS238'], (1, False)), Req(['CS124', 'CS224N', 'CS224S', 'CS224U'], (1, False)), Req(['CS131', 'CS231A', 'CS231N'], (1, False)), Req(['CS223A', 'CS237A'], (1, False)), Req(['CS228', 'CS229', 'CS234', 'CS238', 'CS124', 'CS224N', 'CS224S', 'CS224U', 'CS131', 'CS231A', 'CS231N', 'CS223A', 'CS237A', 'CS157', 'CS205L', 'CS230', 'CS236', 'STATS315A', 'STATS315B', 'CS235', 'CS279', 'CS371','CS276', 'CS224W', 'CS151', 'CS227B', 'CS379', 'CS327A', 'CS329', 'ENGR205', 'MS&E251', 'MS&E351'], (1, False)),
-#           Req(['CS228', 'CS229', 'CS234', 'CS238', 'CS124', 'CS224N', 'CS224S', 'CS224U', 'CS131', 'CS231A', 'CS231N', 'CS223A', 'CS237A', 'CS157', 'CS205L', 'CS230', 'CS236', 'STATS315A', 'STATS315B', 'CS235', 'CS279', 'CS371','CS276', 'CS224W', 'CS151', 'CS227B', 'CS379', 'CS327A', 'CS329', 'ENGR205', 'MS&E251', 'MS&E351', 'CS108', 'CS124', 'CS131', 'CS140', 'CS142', 'CS143', 'CS144', 'CS145', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155', Req(['CS157', 'PHIL151'], 2),
-#     'CS164', 'CS166', 'CS167', 'CS168', 'CS190', 'CS205A', 'CS205B', 'CS210A', 'CS221',
-#     'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229T',
-#     'CS231A', 'CS231B', 'CS231M', 'CS231N', 'CS232', 'CS233', 'CS240', 'CS240H', 'CS242', 'CS243', 'CS244',
-#     'CS244B', 'CS245', 'CS246', 'CS247', 'CS248', 'CS249A', 'CS251', 'CS254', 'CS255', 'CS261', 'CS262',
-#     'CS263', 'CS264', 'CS265', 'CS266', 'CS267', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS279',
-#     'CS348B', 'CS348C',
-#     'CME108',
-#     'EE180', 'EE282', 'EE364A', 'CS237B', 'CS257', 'CS275', 'CS326', 'CS330', 'CS338', 'CS398', 'CS428']
+
 electives = [
     'CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
     Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
@@ -107,17 +100,109 @@ electives = [
     'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
     'CME108',
     'EE180', 'EE282']
-ai = Req(['CS221', Req(['CS228', 'CS229', 'CS234', 'CS238', 'CS124', 'CS224N', 'CS224S', 'CS224U', 'CS131', 'CS231A', 'CS231N', 'CS223A', 'CS237A'], (2, False)), Req(['CS157', 'CS205L', 'CS230', 'CS236', 'STATS315A', 'STATS315B', 'CS235', 'CS279', 'CS371', 'CS276', 'CS224W', 'CS151', 'CS227B', 'CS379', 'CS327A', 'CS329', 'ENGR205', 'MS&E251', 'MS&E351'], (1, False)), Req(electives.extend('CS237B', 'CS257', 'CS275', 'CS326', 'CS330', 'CS336', 'CS38', 'CS398', 'CS428', 'EE263', 'EE278', '364A', 'EE364B', 'ECON286', 'MS&E252', 'MS&E352', 'MS&E355', 'PHIL152', 'PSYCH204A', 'PSYCH204B', 'PSYCH209', 'STATS200', 'STATS202', 'STATS205'), (3, False))], (7, False))
-bio = Req([Req(['CS221', 'CS228', 'CS229', 'CS231A'], (1, False)), Req(['CS235', 'CS270', 'CS273A', 'CS274', 'CS275', 'CS279'], (1, False)), Req(['CS124', 'CS145', 'CS147', 'Cs148', 'CS248', 'CS221', 'CS228', 'CS229', 'CS231A', 'CS235', 'CS270', 'CS273A', 'CS274', 'CS275', 'CS279'], (1, False)), Req(electives.extend('EE364A', 'BIOE101', 'MS&E152', 'MS&E252', 'STATS206', 'STATS315A', 'STATS315B', 'GENE211'), (1, False)), Req(electives.extend('EE364A', 'BIOE101', 'MS&E152', 'MS&E252', 'STATS206', 'STATS315A', 'STATS315B', 'GENE211', 'CHEMENG', 'CHEMENG174', 'APPPHYS294', 'BIO104', 'BIO118', 'BIO214', 'BIO230', 'CHEM141', 'CHEM171', 'BIOC241'), (1, False)), Req(['BIOE220', 'CHEMENG150', 'CHEMENG174', 'CS235A', 'CS274', 'CS279', 'CS371', 'ME281', 'APPPHYS294', 'BIO104', 'BIO112', 'BIO118', 'BIO158', 'BIO183', 'BIO214', 'BIO230', 'CHEM171', 'CHEM141', 'BIOC241', 'DBIO210', 'GENE211', 'SURG101'], (1, False))], (7, False))
-compe = Req(['EE108', 'EE180', Req(['EE101A', 'EE101B', 'EE102A', 'EE102B'], (2, False)), Req([Req([Req(['CS140', 'CS140E', 'CS143'], (1, False)), 'EE109', 'EE271', Req(['CS144','CS149', 'CS190', 'CS217', 'CS244', 'EE273', 'EE282', Req(['CS140', 'CS140E', 'CS143'], (1, False))], (2, False)), Req(['CS205L', 'CS223A', 'ME210', 'ENGR105', Req(['CS225A', 'CS231A', 'ENGR205', 'ENGR207B'], (1, False))], (5, False)), Req(['CS140', 'CS144', Req(['CS241', 'CS244', 'CS244B', 'EE179'], (3, False))], (3, False))], (4, False))], (1, False))], (4, False))
-graphics = Req()
-information = []
-systems = []
-theory = []
-unspecialized = []
+ai = Req(['CS221', Req(['CS228', 'CS229', 'CS234', 'CS238', 'CS124', 'CS224N', 'CS224S', 'CS224U', 'CS131', 'CS231A', 'CS231N', 'CS223A', 'CS237A'], (2, False)), Req(['CS157', 'CS205L', 'CS230', 'CS236', 'STATS315A', 'STATS315B', 'CS235', 'CS279', 'CS371', 'CS276', 'CS224W', 'CS151', 'CS227B', 'CS379', 'CS327A', 'CS329', 'ENGR205', 'MS&E251', 'MS&E351'], (1, False)), Req(['CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
+    Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
+    'CS166', 'CS168', 'CS190', 'CS195', 'CS197', 'CS205L', 'CS210A', 'CS217', 'CS221',
+    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229M', 'CS230',
+    'CS231A', 'CS231N', 'CS232', 'CS233', 'CS234', 'CS235', 'CS237A', 'CS237B', 'CS238', 'CS240', 'CS240LX', 'CS242', 'CS243', 'CS244',
+    'CS244B', 'CS245', 'CS246', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS248', 'CS251', 'CS252', 'CS254', 'CS254B', 'CS255', 'CS261', 'CS263', 'CS265', 'CS269I', 'CS269Q', 'CS271', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS278', 'CS279', 'CS330',
+    'CS336', 
+    'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
+    'CME108',
+    'EE180', 'EE282' ,'CS237B', 'CS257', 'CS275', 'CS326', 'CS330', 'CS336', 'CS38', 'CS398', 'CS428', 'EE263', 'EE278', '364A', 'EE364B', 'ECON286', 'MS&E252', 'MS&E352', 'MS&E355', 'PHIL152', 'PSYCH204A', 'PSYCH204B', 'PSYCH209', 'STATS200', 'STATS202', 'STATS205'], (3, False))], (7, False))
 
-# ]
+bio = Req([Req(['CS221', 'CS228', 'CS229', 'CS231A'], (1, False)), Req(['CS235', 'CS270', 'CS273A', 'CS274', 'CS275', 'CS279'], (1, False)), Req(['CS124', 'CS145', 'CS147', 'Cs148', 'CS248', 'CS221', 'CS228', 'CS229', 'CS231A', 'CS235', 'CS270', 'CS273A', 'CS274', 'CS275', 'CS279'], (1, False)), Req(['CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
+    Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
+    'CS166', 'CS168', 'CS190', 'CS195', 'CS197', 'CS205L', 'CS210A', 'CS217', 'CS221',
+    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229M', 'CS230',
+    'CS231A', 'CS231N', 'CS232', 'CS233', 'CS234', 'CS235', 'CS237A', 'CS237B', 'CS238', 'CS240', 'CS240LX', 'CS242', 'CS243', 'CS244',
+    'CS244B', 'CS245', 'CS246', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS248', 'CS251', 'CS252', 'CS254', 'CS254B', 'CS255', 'CS261', 'CS263', 'CS265', 'CS269I', 'CS269Q', 'CS271', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS278', 'CS279', 'CS330',
+    'CS336', 
+    'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
+    'CME108',
+    'EE180', 'EE282', 'EE364A', 'BIOE101', 'MS&E152', 'MS&E252', 'STATS206', 'STATS315A', 'STATS315B', 'GENE211'], (1, False)), Req(['CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
+    Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
+    'CS166', 'CS168', 'CS190', 'CS195', 'CS197', 'CS205L', 'CS210A', 'CS217', 'CS221',
+    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229M', 'CS230',
+    'CS231A', 'CS231N', 'CS232', 'CS233', 'CS234', 'CS235', 'CS237A', 'CS237B', 'CS238', 'CS240', 'CS240LX', 'CS242', 'CS243', 'CS244',
+    'CS244B', 'CS245', 'CS246', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS248', 'CS251', 'CS252', 'CS254', 'CS254B', 'CS255', 'CS261', 'CS263', 'CS265', 'CS269I', 'CS269Q', 'CS271', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS278', 'CS279', 'CS330',
+    'CS336', 
+    'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
+    'CME108',
+    'EE180', 'EE282' , 'EE364A', 'BIOE101', 'MS&E152', 'MS&E252', 'STATS206', 'STATS315A', 'STATS315B', 'GENE211', 'CHEMENG', 'CHEMENG174', 'APPPHYS294', 'BIO104', 'BIO118', 'BIO214', 'BIO230', 'CHEM141', 'CHEM171', 'BIOC241'], (1, False)), Req(['BIOE220', 'CHEMENG150', 'CHEMENG174', 'CS235A', 'CS274', 'CS279', 'CS371', 'ME281', 'APPPHYS294', 'BIO104', 'BIO112', 'BIO118', 'BIO158', 'BIO183', 'BIO214', 'BIO230', 'CHEM171', 'CHEM141', 'BIOC241', 'DBIO210', 'GENE211', 'SURG101'], (1, False))], (7, False))
 
+
+
+
+digsis = Req([Req(['CS140', 'CS140E', 'CS143'], (1, False)), 'EE109', '22271', Req(['CS144', 'CS149', 'CS190', Req(['CS140', 'CS140E', 'CS143'], (1, False)), 'CS217', 'CS244', 'EE273', 'EE282'], (2, False))], (5, False))
+robo = Req(['CS205L', 'CS223A', 'ME210', 'ENGR105', Req(['CS225A', 'CS231A', 'ENGR205', 'ENGR207B'], (1, False))], (5, False))
+net = Req(['CS140', 'CS144', Req(['CS241', 'CS244', 'CS244B', 'EE179', Req(['CS240', 'CS240LX'], (1, False))], (3, False))], (3, False))
+compe = Req(['EE180', 'EE108', Req(['EE101A', 'EE101B', 'EE102A', 'EE102B'], (2, False)), Req([digsis, robo, net], (1, False))], (7, False))
+
+
+
+
+
+
+graphics = Req(['CS148', 'CS244', Req(['CS205L', 'CME104', 'CME108', 'MATH52', 'MATH113'], (1, False)), Req(['CS146', 'CS233', 'CS448', Req(['CS231A', 'CS131'], (1, False)), 'CS348A', 'CS348B',], (2, False)), Req(['CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
+    Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
+    'CS166', 'CS168', 'CS190', 'CS195', 'CS197', 'CS205L', 'CS210A', 'CS217', 'CS221',
+    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229M', 'CS230',
+    'CS231A', 'CS231N', 'CS232', 'CS233', 'CS234', 'CS235', 'CS237A', 'CS237B', 'CS238', 'CS240', 'CS240LX', 'CS242', 'CS243', 'CS244',
+    'CS244B', 'CS245', 'CS246', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS248', 'CS251', 'CS252', 'CS254', 'CS254B', 'CS255', 'CS261', 'CS263', 'CS265', 'CS269I', 'CS269Q', 'CS271', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS278', 'CS279', 'CS330',
+    'CS336', 
+    'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
+    'CME108',
+    'EE180', 'EE282', 'CS148', 'CS244', 'CS205L', 'CME104', 'CME108', 'MATH52', 'MATH113', 'CS146', 'CS233', 'CS448', 'CS231A', 'CS131', 'CS348A', 'CS348B', 'ARTSTDUI160', 'ARTSUDI170', 'ARTSTUDI179', 'CME302', 'CME306', 'EE168', 'EE262', 'EE264', 'EE278', 'EE368', 'ME101', 'PSYCH30', 'PSYCH221'], (2, False))], (7, False))
+
+hci = Req(['CS147', 'CS347', 'CS142', Req(['CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S'], (1, False)), Req(['CS194H', 'CS206', 'CS210A', Req(['CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S'], (1, False)), 'CS278', 'CS448', 'ME216M'], (1, False)), Req(['CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
+    Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
+    'CS166', 'CS168', 'CS190', 'CS195', 'CS197', 'CS205L', 'CS210A', 'CS217', 'CS221',
+    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229M', 'CS230',
+    'CS231A', 'CS231N', 'CS232', 'CS233', 'CS234', 'CS235', 'CS237A', 'CS237B', 'CS238', 'CS240', 'CS240LX', 'CS242', 'CS243', 'CS244',
+    'CS244B', 'CS245', 'CS246', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS248', 'CS251', 'CS252', 'CS254', 'CS254B', 'CS255', 'CS261', 'CS263', 'CS265', 'CS269I', 'CS269Q', 'CS271', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS278', 'CS279', 'CS330',
+    'CS336', 
+    'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
+    'CME108',
+    'EE180', 'EE282', 'CS147', 'CS347', 'CS142', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS194H', 'CS206', 'CS210A', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S',  'CS278', 'CS448', 'ME216M'], (2, False))], (7, False))
+
+information = Req(['CS124', 'CS145', Req(['CS224N', 'CS224S', 'CS229', 'CS233', 'CS234', 'CS142', 'CS151', 'CS245', 'CS246', 'CS341', 'CS235', 'CS270', 'CS24', 'CS224W', 'CS276'], (2, False)), Req(['CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
+    Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
+    'CS166', 'CS168', 'CS190', 'CS195', 'CS197', 'CS205L', 'CS210A', 'CS217', 'CS221',
+    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229M', 'CS230',
+    'CS231A', 'CS231N', 'CS232', 'CS233', 'CS234', 'CS235', 'CS237A', 'CS237B', 'CS238', 'CS240', 'CS240LX', 'CS242', 'CS243', 'CS244',
+    'CS244B', 'CS245', 'CS246', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS248', 'CS251', 'CS252', 'CS254', 'CS254B', 'CS255', 'CS261', 'CS263', 'CS265', 'CS269I', 'CS269Q', 'CS271', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS278', 'CS279', 'CS330',
+    'CS336', 
+    'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
+    'CME108',
+    'EE180', 'EE282','CS224N', 'CS224S', 'CS229', 'CS233', 'CS234', 'CS142', 'CS151', 'CS245', 'CS246', 'CS341', 'CS235', 'CS270', 'CS24', 'CS224W', 'CS276'], (3, False))], (7, False))
+
+systems = Req([Req(['CS140', 'CS140E'], (1, False)), 'CS143', 'EE180', Req(['CS144', 'CS145', 'CS149', 'CS155', 'CS190', 'CS217', Req(['CS240', 'CS240LX'], (1, False)), 'CS242', 'CS243', 'CS244', 'CS245', 'EE271', 'EE282'], (2, False)), Req(['CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
+    Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
+    'CS166', 'CS168', 'CS190', 'CS195', 'CS197', 'CS205L', 'CS210A', 'CS217', 'CS221',
+    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229M', 'CS230',
+    'CS231A', 'CS231N', 'CS232', 'CS233', 'CS234', 'CS235', 'CS237A', 'CS237B', 'CS238', 'CS240', 'CS240LX', 'CS242', 'CS243', 'CS244',
+    'CS244B', 'CS245', 'CS246', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS248', 'CS251', 'CS252', 'CS254', 'CS254B', 'CS255', 'CS261', 'CS263', 'CS265', 'CS269I', 'CS269Q', 'CS271', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS278', 'CS279', 'CS330',
+    'CS336', 
+    'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
+    'CME108',
+    'EE180', 'EE282','CS144', 'CS145', 'CS149', 'CS155', 'CS190', 'CS217', Req(['CS240', 'CS240LX'], (1, False)), 'CS242', 'CS243', 'CS244', 'CS245', 'EE271', 'EE282', 'CS242', 'CS269Q', 'CS316', 'CS341', 'CS344', 'CS349', 'CS357S', 'CS448', 'EE108', 'EE382C', 'EE384A', 'EE384C', 'EE384E', 'EE384S'], (3, False))], (7, False))
+
+theory = Req(['CS154', Req(['CS168', 'CS255', 'CS261', 'CS265', 'CS268'], (1, False)), Req(['CS143', 'CS151', 'CS155', Req(['CS157', 'PHIL151'], (1, False)), 'CS163', 'CS166', 'CS205L', 'CS228', 'CS233', 'CS235', 'CS236', 'CS242', 'CS250', 'CS251', 'CS252', 'CS254', 'CS259', 'CS263', 'CS269I', 'CS351', 'CS354', 'CS355', 'CS357', 'CS358', 'CS359', 'CS369', 'MS&E310'], (2, False)), Req(['CS108', 'CS124', 'CS131', Req(['CS140', 'CS140E'], (1, False)), 'CS142', 'CS143', 'CS144', 'CS145', 'CS146', 'CS147', 'CS148', 'CS149', 'CS154', 'CS155',
+    Req(['CS157', 'PHIL151'], (1, False)), 'CS163',
+    'CS166', 'CS168', 'CS190', 'CS195', 'CS197', 'CS205L', 'CS210A', 'CS217', 'CS221',
+    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224W', 'CS225A', 'CS227B', 'CS228', 'CS229', 'CS229M', 'CS230',
+    'CS231A', 'CS231N', 'CS232', 'CS233', 'CS234', 'CS235', 'CS237A', 'CS237B', 'CS238', 'CS240', 'CS240LX', 'CS242', 'CS243', 'CS244',
+    'CS244B', 'CS245', 'CS246', 'CS247A', 'CS247B', 'CS247G', 'CS247I', 'CS247S', 'CS248', 'CS251', 'CS252', 'CS254', 'CS254B', 'CS255', 'CS261', 'CS263', 'CS265', 'CS269I', 'CS269Q', 'CS271', 'CS270', 'CS272', 'CS273A', 'CS273B', 'CS274', 'CS276', 'CS278', 'CS279', 'CS330',
+    'CS336', 
+    'CS348B', 'CS348C', 'CS348A', 'CS348E', 'CS348D', 'CS348K', 'CS351', 'CS352', 'CS369L', 'CS398', 
+    'CME108',
+    'EE180', 'EE282','CS143', 'CS151', 'CS155', Req(['CS157', 'PHIL151'], (1, False)), 'CS163', 'CS166', 'CS205L', 'CS228', 'CS233', 'CS235', 'CS236', 'CS242', 'CS250', 'CS251', 'CS252', 'CS254', 'CS259', 'CS263', 'CS269I', 'CS351', 'CS354', 'CS355', 'CS357', 'CS358', 'CS359', 'CS369', 'MS&E310', 'CS168', 'CS255', 'CS261', 'CS265', 'CS268', 'CS254B', 'CS269G', 'CME302', 'PHIL152', 'CME305'], (3, False))], (7, False))
+
+unspecialized = Req(['CS154', Req(['CS143', Req(['CS140', 'CS140E'], (1, False))], (1, False)), Req(['CS144', 'CS155', 'CS190', 'CS242', 'CS244', 'EE180'], (1, False)), Req(['CS221', 'CS223A', 'CS228', 'CS229', 'CS231A'], (1, False)), Req(['CS145', 'CS147', 'CS148', 'CS235', 'CS248'], (1, False)), Req(electives, (1, False))], (7, False))
+
+print(bio.reqs)
+print(ai.reqs)
 
 TRACKS['cs'] = [
     'CS103', 'CS109', 'MATH19', 'MATH20', 'MATH21', 
@@ -131,8 +216,8 @@ TRACKS['cs'] = [
     Req(['ENGR10', 'ENGR14', 'ENGR15', 'ENGR20', 'ENGR21', 'ENGR40A', 'ENGR40B', 'ENGR40M', 'ENGR42', 'ENGR50', 'ENGR50E', 'ENGR50M',
          'ENGR60', 'ENGR62', 'ENGR62X', 'ENGR76', 'CS106A', 'CS106B', 'CS106M', 'ENGR80', 'ENGR90'], (1, False)),
     Req(['CS181W', 'CS182W', 'CS191W', 'CS194W', 'CS210B', 'CS294s', 'CS294W'], (1, False)), Req(['CS181W', 'CS182W', 'CS191W', 'CS194W', 'CS210B', 'CS294W'], (1, False)), Req(['CS107', 'CS107E'], (1, False)), Req(['CS110', 'CS111'], (1, False)), 'CS161', 
-    Req(['CS191', 'CS191W', 'CS194', 'CS194H', 'CS194W', 'CS210B', 'CS294S', 'CS294W'], (1, False)), 
-]
+    Req(['CS191', 'CS191W', 'CS194', 'CS194H', 'CS194W', 'CS210B', 'CS294S', 'CS294W'], (1, False))
+,Req([bio, compe, unspecialized, ai, bio, theory, systems,hci, graphics ], (1, False))]
     
     
     
@@ -198,26 +283,26 @@ TRACKS['me'] = [
 ]
 
 
-'''
-physics
-'''
-#tracks
-core_track = Req(['PHYSICS110', 'PHYSICS131', 'PHYSICS171'], (6, False)) #NOT DONE
-astro = Req(['PHYSICS100', 'PHYSICS110', 'PHYSICS160', Req(['PHYSICS61', 'PHYSICS262'], (1, False)), Req(['GEOLSCI219', 'PHYSICS113', 'PHYSICS131', 'PHYSICS166', 'PHYSICS171', 'PHYSICS262'], (2, False))], (1, False))
-biophysics = Req([Req(['PHYSICS110', 'PHYSICS131'], (1, False)), 'APPPHYS232', 'BIOE42', 'BIOE101', 'BIOE102' Req(['APPPHYS205', 'BIO126'], (1, False)), Req(['APPPHYS293', 'PSYCH242'], (1, False)), Req([ 'APPPHYS294', 'BIO294'], (1, False)), Req(['APPPHYS237', 'BIO251'], (1, False))], (8, False)) #not done
-comp_phys = Req(['PHYSICS110', 'PHYSICS113', Req(['CS129', 'CS154', 'CS161', 'CS205L', 'CS221', 'CS229','CS230', 'STATS200', Req(['PHYSICS166', 'STATS116', 'CS109'], (1, False)), Req(['STATS203', 'STATS270', 'STATS271'], (1, False))], (3, False))], (3, False)) #NOT DONE
-GEO_PHYS = Req(['PHYSICS110', Req(['PHYSICS131', 'PHYSICS171'], (1, False)), Req(['GEOPHYS110', 'GEOPHYS120', 'GEOPHYS128', 'GEOPHYS130', 'GEOPHYS162', 'GEOPHYS165', 'GEOPHYS182', 'GEOPHYS184', 'GEOPHYS188', 'GEOPHYS227', 'GEOPHYS237'], (3, False))], (3, False))
-math_phys = Req(['PHYSICS110'], (4, False))
-physics_education = Req(['PHYSICS110', Req(['PHYSICS131', 'PHYSICS171'], (1, False)), Req(['EDUC101', 'EDUC398', 'EDUC400A', 'EDUC266', 'EDUC332', 'EDUC357', 'EDUC218', 'EDUC328', 'EDUC391' Req(['PHYSICS295', 'EDUC280'], (1, False))], (3, False))], (4, False)) # NOT DONE
+# '''
+# physics
+# '''
+# #tracks
+# core_track = Req(['PHYSICS110', 'PHYSICS131', 'PHYSICS171'], (6, False)) #NOT DONE
+# astro = Req(['PHYSICS100', 'PHYSICS110', 'PHYSICS160', Req(['PHYSICS61', 'PHYSICS262'], (1, False)), Req(['GEOLSCI219', 'PHYSICS113', 'PHYSICS131', 'PHYSICS166', 'PHYSICS171', 'PHYSICS262'], (2, False))], (1, False))
+# biophysics = Req([Req(['PHYSICS110', 'PHYSICS131'], (1, False)), 'APPPHYS232', 'BIOE42', 'BIOE101', 'BIOE102' Req(['APPPHYS205', 'BIO126'], (1, False)), Req(['APPPHYS293', 'PSYCH242'], (1, False)), Req([ 'APPPHYS294', 'BIO294'], (1, False)), Req(['APPPHYS237', 'BIO251'], (1, False))], (8, False)) #not done
+# comp_phys = Req(['PHYSICS110', 'PHYSICS113', Req(['CS129', 'CS154', 'CS161', 'CS205L', 'CS221', 'CS229','CS230', 'STATS200', Req(['PHYSICS166', 'STATS116', 'CS109'], (1, False)), Req(['STATS203', 'STATS270', 'STATS271'], (1, False))], (3, False))], (3, False)) #NOT DONE
+# GEO_PHYS = Req(['PHYSICS110', Req(['PHYSICS131', 'PHYSICS171'], (1, False)), Req(['GEOPHYS110', 'GEOPHYS120', 'GEOPHYS128', 'GEOPHYS130', 'GEOPHYS162', 'GEOPHYS165', 'GEOPHYS182', 'GEOPHYS184', 'GEOPHYS188', 'GEOPHYS227', 'GEOPHYS237'], (3, False))], (3, False))
+# math_phys = Req(['PHYSICS110'], (4, False))
+# physics_education = Req(['PHYSICS110', Req(['PHYSICS131', 'PHYSICS171'], (1, False)), Req(['EDUC101', 'EDUC398', 'EDUC400A', 'EDUC266', 'EDUC332', 'EDUC357', 'EDUC218', 'EDUC328', 'EDUC391' Req(['PHYSICS295', 'EDUC280'], (1, False))], (3, False))], (4, False)) # NOT DONE
 
 
 
 
-TRACKS['physics'] = [
-    Req([Req(['PHYSICS41', 'PHYSICS42', 'PHYSICS43', 'PHYSICS45', 'PHYSICS46', 'PHYSICS70', Req(['PHYSICS44', 'PHYSICS67'], (1, False))], (7, False)), Req(['PHYSICS61', 'PHYSICS62', 'PHYSICS63', 'PHYSICS64', 'PHYSICS65', 'PHYSICS67'], (6, False))], (1, False)), Req([Req(['MATH51', 'MATH52', 'MATH53'], (3, False)), Req(['MATH61CM', 'MATH62CM', 'MATH63CM'], (3, False))], (1, False)), Req(['PHYSICS111', 'MATH131P', 'MATH173'], (1, False)), 'PHYSICS120', 'PHYSICS121', 'PHYSICS130', 'PHYSICS170', 'PHYSICS191', Req([], (1, False)), 
+# TRACKS['physics'] = [
+#     Req([Req(['PHYSICS41', 'PHYSICS42', 'PHYSICS43', 'PHYSICS45', 'PHYSICS46', 'PHYSICS70', Req(['PHYSICS44', 'PHYSICS67'], (1, False))], (7, False)), Req(['PHYSICS61', 'PHYSICS62', 'PHYSICS63', 'PHYSICS64', 'PHYSICS65', 'PHYSICS67'], (6, False))], (1, False)), Req([Req(['MATH51', 'MATH52', 'MATH53'], (3, False)), Req(['MATH61CM', 'MATH62CM', 'MATH63CM'], (3, False))], (1, False)), Req(['PHYSICS111', 'MATH131P', 'MATH173'], (1, False)), 'PHYSICS120', 'PHYSICS121', 'PHYSICS130', 'PHYSICS170', 'PHYSICS191', Req([], (1, False)), 
 
 
-]
+# ]
 
 
 
